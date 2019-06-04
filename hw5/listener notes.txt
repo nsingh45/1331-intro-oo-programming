@@ -1,0 +1,46 @@
+GUI stuff
+
+outside: JFrame
+inside JFrame: JPanel
+Inside JPanel: JButtons, JTextField, etc
+
+import javax.swing.JFrame;
+
+public class GUIIntro {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame(); //need panel 
+        MyFirstPanel panel = new MyFirstPanel(); //new class for panel, add panel to frame
+        frame.add(panel);
+        frame.pack();
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
+    }
+}
+
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class MyFirstPanel extends JPanel {
+    JLabel label1;
+    JTextField field1;
+    
+    public myFirstPanel() {
+        label1 = new Label("Hello, world!");
+        this.add(label1); //adds label to panel
+        
+        field1 = new JTextField(20); //sets width of text field
+        this.add(field1);
+        
+        button1 = new JButton("Click me!");
+        this.add(button1);
+        button1.addActionListener(new ActionListener);
+        
+    }
+    
+    private class MyFirstListener implements ActionListener (
+        public void actionPerformed(ActionEvent e) {
+            label1.setText("Hello, "+field1.getText()+"!");
+        }
+    }
+}

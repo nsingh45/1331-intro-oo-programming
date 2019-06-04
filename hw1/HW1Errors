@@ -1,0 +1,7 @@
+1. Compiler error: "class GTbuzz is public, should be declared in a file called GTbuzz.java"
+2. Error running the program: "Exception in thread "main" java.lang.ArithmeticException: / by zero"
+3. Compiler error: "Cannot find symbol"
+4. 5 compiler errors: "unclosed character literal", "unclosed character literal","';' expected","';' expected", "unclosed string literal"
+5. No error
+6. Compiler error: "';' expected"
+7. Compiler error: "Reached endof file while parsing"

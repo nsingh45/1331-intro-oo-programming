@@ -1,0 +1,25 @@
+8.5-8.6
+
+2-dimensional arrays
+Array of arrays
+Syntax: int[][] arr2d;
+0   1   2   ... 9
+10  11      ... 19
+20          ... 29
+
+int[][] grid = new int[3][10]; //3x10 array
+for (r = 0; r <= 2; r++) {
+    for (c = 0; c <= 9; c++) {
+        grid[r][c] = r * 10 + c;
+    }
+}
+
+grid.length is an array of integer arrays (3)
+grid[1].length = 0
+Also can do
+    int[][] grid = {{0,1,2,...,9},{10,11,...},{20,...,29}};
+Multidimensional arrays can have ragged sizes
+int[][] a = new int[3][];
+a[0] = new int[2];
+a[1] = new int[3];
+a[2] = new int[4];
